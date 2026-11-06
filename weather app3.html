@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+
+    <style>
+        body {
+            background-color: blueviolet;
+            background-image: radial-gradient(url(cloud.png), transparent 3px);
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #f0f8ff;
+        }
+
+        .weather-card {
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-image:linear-gradient(to bottom right, #1e90ff, #87cefa
+        }
+
+        .weather-icon {
+            font-size: 70px;
+            animation: floatcloud 3s infinite alternate;
+        }
+
+        #temperature {
+            font-size: 48px;
+            font-weight: bold;
+            color: fffacd
+        }
+
+        .details {
+            font-size: 18px;
+            color: white;
+        }
+
+        .forecast-selection {
+             width: 400px;
+            border: 2px solid white;
+            border-radius: 20px;
+            background-image:linear-gradient(to bottom right, #1e90ff, #87cefa)
+        }
+
+        .forecast-title {
+            colour: white;
+        }
+
+        .day {
+            border:2px solid #4682b4;
+            font-size: 17px;
+            color: #003366;
+        }
+
+        h2 h3 {
+            color: white;
+        }
+
+        @keyframes floatcloud {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Weather App</h1>
+    <p class="subtitle">
+        Welcome to my FANTASTIC weather app! you can check the current weather and forecast for your location.
+
+    </p>
+
+    <div class="weather-card">
+        <h2>Current Weather</h2>
+        <p id="temperature">25°C / 20°C </p>
+        <p class="details"> City: La Mercy </p>
+        <p class="details">Condition: Partly Sunny </p>
+        <p class="details">Humidity: 77% </p>
+        <p class="details">Wind: 13 km/h </p>
+        <p class="details">UV Index: Moderate</p>
+        <p class="details">Feels like: 24°C,</p>
+        <p class="details"> temp: 25°C / 20°C</p>
+    </div>
+
+    <div class="forecast-section">
+        <h2 class="forecast-title">Weekly Forecast</h2>
+
+        <div class="day">
+            Monday:
+            Condition: Partly Sunny
+            Temperature: 22°C / 16°C
+        </div>
+        <div class="day">
+            Tuesday:
+            Condition: Sunny
+            Temperature: 26°C / 17°C
+        </div>
+        <div class="day">
+            Wednesday:
+            Condition: Sunny
+            Temperature: 31°C / 16°C
+        </div>
+        <div class="day">
+            Thursday:
+            Condition: Partly cloudy
+            Temperature: 31°C / 22°C
+        </div>
+        <div class="day">
+            Friday:
+            Condition: rainy
+            Temperature: 28°C / 22°C
+        </div>
+        <div class="day">
+            Saturday:
+            Condition: Partly Sunny,Drizzling
+            Temperature: 27°C / 22°C
+        </div>
+        <div class="day">
+            Sunday:
+            Condition: Partly Cloudy
+            Temperature: 31°C / 23°C
+        </div>
+</body>
+
+</html>

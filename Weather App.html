@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+
+     <style>
+     body { 
+          background-image:url("cute clouds.jpg");
+         background-size: cover;
+         background-repeat: repeat;
+         background-position: center;
+         background-attachment: fixed;
+         color: purple;
+         font-family: Arial, sans-serif;
+         text-align: center;
+        }
+
+     h1 {
+         font-size: 3em;
+         margin-top: 20px;
+         color: white;
+        }
+
+     .subtitle {
+         font-size: 1.5em;
+         margin-bottom: 20px;
+         color: lightblue;
+        }
+
+     .weather-card {
+         background-color: rgba(255, 255, 255, 0.8);
+         border-radius: 10px;
+         padding: 20px;
+         margin: 20px auto;
+         width: 300px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+     .weather-icon {
+         width: 100px;
+         height: 100px;
+         margin-bottom: 10px;
+         animation: floatcloud 3s ease-in-out infinite;
+        }
+
+     #temperature {
+         font-size: 2em;
+         margin-bottom: 10px;
+        }
+
+     .details {
+         font-size: 1em;
+         color: #333;
+       }
+
+     .forecast-selection {
+         margin-top: 20px;
+         background-color: rgba(255, 255, 255, 0.8);
+         border-radius: 10px;
+         padding: 20px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .forecast-title {
+         font-size: 1.5em;
+         margin-bottom: 10px;
+         color: #333;
+        }
+
+     .day {
+         display: inline-block;
+         width: 100px;
+         margin: 10px;
+         padding: 10px;
+         background-color: rgba(255, 255, 255, 0.8);
+         border-radius: 10px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+     h2
+      h3   {
+             font-size: 1.2em;
+              margin-bottom: 5px;
+             color: #333;
+            }
+
+     @keyframes floatcloud {
+         0% {
+             transform: translateY(0);
+            }
+         50% {
+             transform: translateY(-10px);
+            }
+         100% {
+             transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Weather App</h1>
+    <p class="subtitle">
+        Welcome to my FANTASTIC weather app! you can check the current weather and forecast for your location.
+
+    </p>
+
+    <div class="weather-card">
+        <h2>Current Weather</h2>
+        <p id="temperature">25°C / 20°C </p>
+        <p class="details"> City: La Mercy </p>
+        <p class="details">Condition: Partly Sunny </p> 
+        <p class="details">Humidity: 77% </p> 
+        <p class="details">Wind: 13 km/h </p>
+        <p class="details">UV Index: Moderate</p>
+        <p class="details">Feels like: 24°C,</p>
+        <p class="details"> temp: 25°C / 20°C</p>
+    </div>
+
+    <div class="forecast-section">
+        <h2 class="forecast-title">Weekly Forecast</h2>
+
+        <div class="day">
+            Monday:
+             Condition: Partly Sunny
+             Temperature: 22°C / 16°C
+            </div>
+        <div class="day">
+            Tuesday: 
+            Condition: Sunny
+            Temperature: 26°C / 17°C
+        </div>
+        <div class="day">
+            Wednesday:
+             Condition: Sunny
+             Temperature: 31°C / 16°C
+            </div>
+        <div class="day">
+            Thursday:
+             Condition: Partly cloudy
+             Temperature: 31°C / 22°C
+            </div>
+        <div class="day">
+            Friday:
+             Condition: rainy
+             Temperature: 28°C / 22°C
+            </div>
+        <div class="day">
+            Saturday:
+             Condition: Partly Sunny,Drizzling
+             Temperature: 27°C / 22°C
+            </div>
+        <div class="day">
+            Sunday:
+             Condition: Partly Cloudy
+             Temperature: 31°C / 23°C
+            </div>
+</body>
+</html>
